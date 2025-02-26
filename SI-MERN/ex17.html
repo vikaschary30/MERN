@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-family: Arial;
+        }
+        .container {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(200, 200, 200);
+            width: 300px;
+            border-radius: 6px;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .notifications {
+            background-color: rgb(49, 109, 245);
+            color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            background-color: rgb(120, 82, 178);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .home-link {
+            font-weight: bold;
+        }
+        .text-box {
+            width: 500px;
+            border: none;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 20px;
+        }
+        button {
+            background-color: rgb(120, 82, 178);
+            color: white;
+            font-size: 16px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 2px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-right: 15px;
+        }
+
+        .info {
+            width: 200px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .handle {
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+        }
+
+        .category {
+            color: rgb(150, 150, 150);
+            font-size: 14px;
+        }
+
+        .follow-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flexbox">
+          <div>Home</div>
+          <div class="notifications">14</div>
+        </div>
+        <div class="flexbox">
+          <div>Notifications</div>
+          <div class="notifications">3</div>
+        </div>
+        <div class="flexbox">
+          <div>Messages</div>
+          <div class="notifications">5</div>
+        </div>
+      </div> 
+      <br>
+      <br>
+      <div class="header">
+        <div class="home-link">Home</div>
+        <input class="text-box" placeholder="Search">
+        <button>Download</button>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <img class="profile-picture" src="cat.jpeg">
+        <div class="info">
+          <p class="name">oliver</p>
+          <p class="handle">the cat</p>
+          <p class="category">Popular</p>
+        </div>
+        <button class="follow-button">Follow</button>
+      </div>
+  
+      <div class="row">
+        <img class="profile-picture" src="puppy.jpeg">
+        <div class="info">
+          <p class="name">Mimi</p>
+          <p class="handle">Sleepy Cat</p>
+          <p class="category">Popular</p>
+        </div>
+        <button class="follow-button">Follow</button>
+      </div>
+  
+      <div class="row">
+        <img class="profile-picture" src="dog.jpg">
+        <div class="info">
+          <p class="name">Rex</p>
+          <p class="handle">Happy Bulldog</p>
+          <p class="category">Popular</p>
+        </div>
+        <button class="follow-button">Follow</button>
+      </div>
+</body>
+</html>

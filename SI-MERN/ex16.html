@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex1{
+        display: flex;
+        flex-direction: row;
+    }
+    .d1{
+        background-color: lightblue;
+        width: 200px;
+    }
+    .d2{
+        background-color: lightpink;
+        width: 75px;
+    }
+    .flex2{
+        display: flex;
+        flex-direction: row;
+    }
+    .d3{
+        background-color: lightblue;
+        width: 50px;
+    }
+    .d4{
+        background-color: lightpink;
+        flex: 1;
+    }
+    .d5{
+        background-color: lightblue;
+        width: 75px;
+    }
+    .flex3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .d6{
+        background-color: lightpink;
+    }
+    .flex4{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid gray;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .d7{
+        background-color: lightpink;
+    }
+    .d8{
+        background-color: lightpink;
+    }
+</style>
+<body>
+    <div class="flex1">
+        <div class="d1">200px</div>
+        <div class="d2">75px</div>
+    </div>
+    <br>
+    <br>
+    <div class="flex2">
+        <div class="d3">col1</div>
+        <div class="d4">col2</div>
+        <div class="d5">col3</div>
+    </div>
+    <br>
+    <br>
+    <div class="flex3">
+        <div class="d6">item1</div>
+        <div class="d6">item2</div>
+        <div class="d6">item3</div>
+        <div class="d6">item4</div>
+    </div>
+    <div class="flex4">
+        <div class="d7">item1</div>
+        <div class="d8">item2</div>
+    </div>
+</body>
+</html>
