@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const hour = 9;
+    if (hour >= 6 && hour <= 12) {
+      console.log('Good morning!');
+    } else if (hour >= 13 && hour <= 17) {
+      console.log('Good afternoon!');
+    } else {
+      console.log('Good night!');
+    }
+
+    const hour1 = 9;
+    if (hour1 >= 6 && hour1 <= 12) {
+      console.log('Good morning!');
+    } else if (hour1 >= 13 && hour1 <= 17) {
+      console.log('Good afternoon!');
+    } else {
+      console.log('Good night!');
+    }
+
+    const hour2 = 9;
+    const name = 'Simon';
+    if (hour2 >= 6 && hour2 <= 12) {
+      console.log(`Good morning ${name}!`);
+    } else if (hour2 >= 13 && hour2 <= 17) {
+      console.log(`Good afternoon ${name}!`);
+    } else {
+      console.log(`Good night ${name}!`);
+    }
+
+    const age = 5;
+    const isHoliday = true;
+    if ((age <= 6 || age >= 65) && !isHoliday) {
+      console.log('Discount');
+    } else {
+      console.log('No discount');
+    }
+
+    const randomNumber = Math.random();
+    if (randomNumber < 0.5) {
+      console.log('heads');
+    } else {
+      console.log('tails');
+    }
+
+    const randomNumber1 = Math.random();
+    const result = randomNumber1 < 0.5 ? 'heads' : 'tails';
+
+    const guess = 'heads';
+    console.log(guess === result ? 'You win!' : 'You lose!');
+
+    
+  </script>
+</body>
+</html>
