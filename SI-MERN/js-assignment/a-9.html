@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(146, 146, 146);
+      font-family: Arial;
+      text-align: center;
+    }
+    h1{
+      text-decoration: underline;
+    }
+    .counter{
+      font-size: 100px;
+    }
+    .increment, .decrement {
+      border: none;
+      padding: 20px;
+      margin-right: 15px;
+      margin-left: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border-radius: 10px;
+    }
+    .increment:hover{
+      background-color: #4d4d4d;
+    }
+    .decrement:hover{
+      background-color: #4d4d4d;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Interactive Counter
+  </h1>
+  <div class="counter">0</div>
+  <br>
+  <button class="increment">
+    Increment
+  </button>
+  <button class="decrement">
+    Decrement
+  </button>
+  <script>
+    let c=0;
+    const countdisplay = document.querySelector('.counter');
+    const incr = document.querySelector('.increment');
+    const decr = document.querySelector('.decrement');
+    incr.addEventListener('click', ()=>{
+      c++;
+      countdisplay.textContent = c;
+    });
+    decr.addEventListener('click', ()=>{
+      if(c>0){
+        c--;
+        countdisplay.textContent=c;
+      }
+    });
+  </script>
+</body>
+</html>
